@@ -1,0 +1,10 @@
+.post-control{
+      background-color: rgb(36, 105, 110);
+      color: white;
+      padding: 5px 5px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      transition: .2s all;
+}

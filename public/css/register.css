@@ -1,0 +1,186 @@
+body{
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;  
+      background: #282828;
+}
+
+.container{
+      /* height: 100vh; */
+      display: flex;
+      justify-content: center;
+      
+}
+
+/* Porfile picture */
+.form-drag-area{
+      background-color: #282828;
+      height: 130px;
+      width: 100%;
+      /* border: 5px solid #b3b3b3; */
+      align-items: center;
+      justify-content: center;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      transition: 300ms ease-in;
+      margin-bottom: 5px;
+      padding: 5px;
+
+      box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+      inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+      inset -4px -4px 10px rgba(67, 67, 67, 0.3),
+      4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-drag-area.active {
+      border: 2px dashed #ffb510;
+      background-color: #282828;
+}
+
+.form-drag-area .right-content{
+      margin: 0 auto;
+}
+
+.form-drag-area .form-upload{
+      background-color: #ffb510;
+}
+
+.form-drag-area .icon{
+      margin: 0 auto;
+}
+
+.form-drag-area .icon img{
+      border-radius: 50%;
+}
+
+.form-drag-area .description{
+      font-size: 13px;
+      font-weight: 500;
+      color: #b1b1b1;
+}
+
+.form-drag-area .form-upload{
+      background-color: #4a73f8;
+      color: #fff;
+      margin: 8px 0;
+      padding: 8px 8px;
+      border: none;
+      cursor: pointer;
+      opacity: 0.9;
+      width: auto;
+      text-align: center;
+}
+
+.form-drag-area .form-upload:hover{
+      opacity: 1;
+}
+
+/* form-validation */
+.form-validation{
+      padding: 5px;
+      transition: .2s all;
+}
+
+.form-validation.active{
+      opacity: 1;
+      height: auto;
+}
+
+.form-validation > div {
+      opacity: 0.5;
+}
+
+.form-validation > div.success {
+      opacity: 1;
+      font-weight: 600;
+      color: #28a745;
+ }
+
+ .form-validation >div.img{
+      opacity: 1;
+ }
+
+
+.form-container {
+     
+      padding: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: #8b8b8b;
+      width: 450px;
+      height: auto;
+      background: url(http://samuel-garcia.site/img/clock-sam.png);
+
+      box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+      inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+      inset -4px -4px 10px rgba(67, 67, 67, 0.3),
+      4px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+ .form-container h1 {
+      font-size: 24px;
+      margin-top: 5px;
+      font-weight: bold;
+      color: #8b8b8b;
+      text-align: center;
+  }
+
+  form input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 1px solid #fff;
+      background: transparent;
+      color: #c2c2c2;
+      font-size: 16px;
+  }
+
+  form input::placeholder {
+      color: #8b8b8b;
+  }
+
+  form button {
+      
+      background-color: rgb(190, 190, 190);
+      color: #000;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      margin: 10px 0;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: .5s all;
+      
+
+      
+  }
+
+  form button:hover {
+      background: url(http://samuel-garcia.site/img/clock-sam.png);
+
+      box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+      inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+      inset -4px -4px 10px rgba(67, 67, 67, 0.3),
+      4px 4px 10px rgba(0, 0, 0, 0.3);
+
+      color: #fff;
+  }
+  .change{
+
+      display: flex;
+      flex-direction: column;
+  
+  }
+  form p {
+      text-align: left;
+      font-size: 14px;
+      color: #ffb510;
+      text-decoration: underline;
+  }
+     
+.form_invalid{
+      color: rgb(151, 31, 31);
+      /* margin-bottom: 10px; */
+  }  
